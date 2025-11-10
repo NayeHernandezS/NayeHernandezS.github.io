@@ -1,0 +1,279 @@
+*{
+	padding: 0;
+	margin: 0;
+	text-decoration: none;
+	list-style: none;
+	box-sizing: border-box;
+}
+.esquina{
+	display: flex;
+	width: 5%;
+	height: 30px;
+	border-radius: 100%;
+	background: skyblue;
+	float: left;
+	margin-right: 20px;
+
+
+}
+.padre {
+	position: relative;
+	display: flex; /*pone a lado las lista del navegador*/
+}
+.yo{
+	width: 750px;
+	height: 80px;
+	text-align: left;
+	font-size: 25px;
+}
+.yo a{
+	text-decoration: none;
+	color: black;
+}
+
+.nave {
+
+	margin-top: 20px;
+	list-style: none;
+	width: 700px;
+	height: 40px;
+	text-align: right; /* lleva las letras a la equina*/
+}
+
+.nave li {
+	display: inline; /*pone los elementos horizontales */
+	border-right: 2px solid gray;
+	margin-top: 10px;
+
+}
+
+.nave a{
+	text-decoration: none;
+	color: gray;
+	font-size: 25px;
+	margin-left: 8px;
+	margin-right: 30px;
+}
+
+li a.active, li a:hover{
+	background: skyblue;
+}
+.nave i{
+	cursor: pointer;
+	display: none;
+}
+
+.imagen {
+	width: 48%;
+	border-radius: 100%;
+	background: skyblue;
+	height: 60%;
+	display: block;
+	margin-left: 60px;
+	margin-top: 130px;
+	overflow: hidden;
+}
+
+.imagen img{
+	width: 100%;
+	height: auto;
+}
+.prescir{
+	width: 50%;
+	margin-left: 200px;
+	text-align: left;
+	margin-top: 160px;
+	font-size: 22px;
+	margin-right: 200px;
+}
+.prescir div{
+	width: 28%;
+}
+
+.pres {
+
+	background: #e3dac9;
+	width: 100%;
+	height: 750px;
+	display: flex;
+	color: black;
+	border-right: 10px;
+}
+.curri {
+	background: skyblue;
+	height: 150px;
+	border-radius: 100%;
+	align-content: center;
+	text-align: center;
+	float: left;
+	margin-top: 20px;
+	margin-right: 20px;
+	display: block;
+}
+.proye{
+	background: lightpink;
+	height: 150px;
+	border-radius: 100%;
+	align-content: center;
+	text-align: center;
+	float: left;
+	margin-top: 20px;
+	margin-right: 20px;
+	display: block;
+}
+.contac {
+	background: lightyellow;
+	height: 150px;
+	border-radius: 100%;
+	align-content: center;
+	text-align: center;
+	float: left;
+	text-align: center;
+	margin-top: 20px;
+	display: block;
+
+}
+.curri a{
+	text-decoration: none;
+	color: black;
+
+}
+.proye a{
+	text-decoration: none;
+	color: black;
+
+}
+.contac a{
+	text-decoration: none;
+}
+
+.contacto {
+	height: 110px;
+	display: flex;
+}
+
+.telefono{
+	width: 30%;
+	text-align: center;
+}
+.correo{
+	width: 35%;
+	text-align: center;
+}
+.rs {
+	width: 35%;
+	text-align: center;
+}
+
+.conacto rs a{
+width: 100px;
+}
+
+
+                          /* aqui empiexa el responsive*/
+
+
+@media screen and (max-width: 1250px){
+
+	.nave{
+		padding-left: 20px;
+	}
+
+	.nave ul li a{
+		font-size: 10px;
+	}
+	.imagen{
+		background: grey;
+		width: 70%;
+	}
+	.imagen img{
+		
+	}
+	.prescir{
+		text-align: center;
+		margin-top: 100px;
+		margin-right: 10%;
+	}
+	.curri{
+		height: 110px;
+	}
+	.curri a{
+		font-size: 16px;
+	}
+	.proye{
+		height: 110px;
+	}
+	.proye a{
+		font-size: 16px;
+	}
+	.contac{
+		height: 110px;
+	}
+	.contac a{
+		font-size: 15px;
+	}
+
+}
+
+@media screen and (max-width: 970px){
+	.padre{
+	
+	}
+	.prescir{
+		font-size: 20px;
+		margin-top: 100px;
+		margin-left: 15px;
+		text-align: right;
+	}
+	.imagen {
+		width: 100%;
+		margin-bottom: 50px;
+		float: center;
+	}
+}
+
+@media screen and (max-width: 800px){
+	.padre{
+		
+	}
+	.esquina{
+		display: none;
+	}
+
+	.yo{
+		text-align: right;
+	}
+	.nave li{
+ display: none;
+ transform: scale(8);
+	}
+	.nave i{
+		display: block;
+		font-size: 40px;
+	}
+	
+	.pres{
+		height: 890px;
+		width: 100%;
+	}
+
+	.imagen{
+		margin-top: 20px;
+		width: 60%;
+		margin-right: 45px;
+		position: absolute;
+		
+
+	}
+	.prescir{
+		position: absolute;
+		margin-top: 540px;
+		width: 90%;
+		height: auto;
+		text-align: center;
+
+	}
+	.curri{
+		width: 100px;
+	}
+}
