@@ -82,5 +82,38 @@
     <footer>
     <p>© 2026 Nayely Hernandez Silva - Todos los derechos reservados</p>
     </footer>
+
+	script>
+        // Scroll suave al hacer clic en el menú
+        document.querySelectorAll("nav ul li").forEach(item => {
+          item.addEventListener("click", () => {
+            const sectionId = item.textContent.toLowerCase();
+            const section = document.getElementById(sectionId);
+            if(section){
+              section.scrollIntoView({ behavior: "smooth" });
+            }
+          });
+        });
+        
+        // Botón "Contáctame" que lleva al formulario
+        document.querySelector("#presentacion button").addEventListener("click", () => {
+          document.getElementById("contacto").scrollIntoView({ behavior: "smooth" });
+        });
+        
+        // Animación de aparición al hacer scroll
+        const elementos = document.querySelectorAll("section, .perfil-img");
+        
+        const mostrarElemento = () => {
+          elementos.forEach(el => {
+            const rect = el.getBoundingClientRect();
+            if(rect.top < window.innerHeight - 100){
+              el.classList.add("visible");
+            }
+          });
+        };
+        
+        window.addEventListener("scroll", mostrarElemento);
+        window.addEventListener("load", mostrarElemento);
+        </script>
 </body>
  </html>
