@@ -47,6 +47,16 @@
 	max-width: 1000px;
 	margin: auto;
   }
+section, .perfil-img {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: all 0.6s ease-out;
+}
+
+section.visible, .perfil-img.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
   /* Imagen de perfil en presentación */
 #presentacion .perfil-img {
 	width: 150px;
