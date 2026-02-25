@@ -1,279 +1,368 @@
-*{
-	padding: 0;
+* {
 	margin: 0;
-	text-decoration: none;
-	list-style: none;
+	padding: 0;
 	box-sizing: border-box;
-}
-.esquina{
+  }
+  
+  /* Tipografía y colores generales */
+  body {
+	font-family: "Segoe UI", Arial, sans-serif;
+	line-height: 1.6;
+	color: #333;
+	background-color: #f9f9f9;
+  }
+  
+  /* Encabezado */
+  header {
+	background: #1a1a1a;
+	color: #fff;
+	padding: 1rem 2rem;
 	display: flex;
-	width: 5%;
-	height: 30px;
-	border-radius: 100%;
-	background: skyblue;
-	float: left;
-	margin-right: 20px;
-
-
-}
-.padre {
-	position: relative;
-	display: flex; /*pone a lado las lista del navegador*/
-}
-.yo{
-	width: 750px;
-	height: 80px;
-	text-align: left;
-	font-size: 25px;
-}
-.yo a{
-	text-decoration: none;
-	color: black;
-}
-
-.nave {
-
-	margin-top: 20px;
+	justify-content: space-between;
+	align-items: center;
+  }
+  
+  header h1 {
+	font-size: 1.5rem;
+  }
+  
+  nav ul {
 	list-style: none;
-	width: 700px;
-	height: 40px;
-	text-align: right; /* lleva las letras a la equina*/
-}
-
-.nave li {
-	display: inline; /*pone los elementos horizontales */
-	border-right: 2px solid gray;
-	margin-top: 10px;
-
-}
-
-.nave a{
-	text-decoration: none;
-	color: gray;
-	font-size: 25px;
-	margin-left: 8px;
-	margin-right: 30px;
-}
-
-li a.active, li a:hover{
-	background: skyblue;
-}
-.nave i{
+	display: flex;
+	gap: 1.5rem;
+  }
+  
+  nav ul li {
 	cursor: pointer;
-	display: none;
-}
-
-.imagen {
-	width: 48%;
-	border-radius: 100%;
-	background: skyblue;
-	height: 60%;
-	display: block;
-	margin-left: 60px;
-	margin-top: 130px;
-	overflow: hidden;
-}
-
-.imagen img{
-	width: 100%;
-	height: auto;
-}
-.prescir{
-	width: 50%;
-	margin-left: 200px;
-	text-align: left;
-	margin-top: 160px;
-	font-size: 22px;
-	margin-right: 200px;
-}
-.prescir div{
-	width: 28%;
-}
-
-.pres {
-
-	background: #e3dac9;
-	width: 100%;
-	height: 750px;
+	transition: color 0.3s;
+  }
+  
+  nav ul li:hover {
+	color: #ffcc00;
+  }
+  
+  /* Secciones generales */
+  section {
+	padding: 3rem 2rem;
+	max-width: 1000px;
+	margin: auto;
+  }
+  /* Imagen de perfil en presentación */
+#presentacion .perfil-img {
+	width: 150px;
+	height: 150px;
+	border-radius: 50%; /* círculo */
+	object-fit: cover;
+	margin-bottom: 1rem;
+	border: 3px solid #ffcc00; /* borde dorado elegante */
+	box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+  }
+  
+  
+  section h2 {
+	margin-bottom: 1rem;
+	color: #1a1a1a;
+	border-bottom: 2px solid #ffcc00;
+	display: inline-block;
+	padding-bottom: 0.3rem;
+  }
+  
+  /* Presentación */
+  #presentacion {
+	text-align: center;
+	background: #fff;
+	border-radius: 8px;
+	padding: 2rem;
+	box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  }
+  
+  #presentacion button {
+	margin-top: 1rem;
+	padding: 0.7rem 1.5rem;
+	border: none;
+	background: #ffcc00;
+	color: #1a1a1a;
+	font-weight: bold;
+	border-radius: 4px;
+	cursor: pointer;
+	transition: background 0.3s;
+  }
+  
+  #presentacion button:hover {
+	background: #e6b800;
+  }
+  
+  /* Proyectos */
+  #proyectos {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+	gap: 1.5rem;
+  }
+  
+  .proyecto {
+	background: #fff;
+	padding: 1.5rem;
+	border-radius: 8px;
+	box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+	text-align: center;
+  }
+  
+  /* Experiencia laboral */
+  #experiencia p {
+	margin-bottom: 1rem;
+  }
+  
+  /* Conocimientos */
+  #conocimientos ul {
 	display: flex;
-	color: black;
-	border-right: 10px;
-}
-.curri {
-	background: skyblue;
-	height: 150px;
-	border-radius: 100%;
-	align-content: center;
-	text-align: center;
-	float: left;
-	margin-top: 20px;
-	margin-right: 20px;
-	display: block;
-}
-.proye{
-	background: lightpink;
-	height: 150px;
-	border-radius: 100%;
-	align-content: center;
-	text-align: center;
-	float: left;
-	margin-top: 20px;
-	margin-right: 20px;
-	display: block;
-}
-.contac {
-	background: lightyellow;
-	height: 150px;
-	border-radius: 100%;
-	align-content: center;
-	text-align: center;
-	float: left;
-	text-align: center;
-	margin-top: 20px;
-	display: block;
-
-}
-.curri a{
-	text-decoration: none;
-	color: black;
-
-}
-.proye a{
-	text-decoration: none;
-	color: black;
-
-}
-.contac a{
-	text-decoration: none;
-}
-
-.contacto {
-	height: 110px;
+	flex-wrap: wrap;
+	gap: 1rem;
+  }
+  
+  #conocimientos li {
+	background: #fff;
+	padding: 0.5rem 1rem;
+	border-radius: 20px;
+	box-shadow: 0 1px 4px rgba(0,0,0,0.1);
+  }
+  
+  /* Educación */
+  #educacion p {
+	margin-bottom: 1rem;
+  }
+  
+  /* Contacto */
+  #contacto form {
 	display: flex;
-}
-
-.telefono{
-	width: 30%;
+	flex-direction: column;
+	gap: 1rem;
+  }
+  
+  #contacto input, 
+  #contacto textarea {
+	padding: 0.8rem;
+	border: 1px solid #ccc;
+	border-radius: 4px;
+  }
+  
+  #contacto button {
+	padding: 0.8rem;
+	border: none;
+	background: #1a1a1a;
+	color: #fff;
+	font-weight: bold;
+	border-radius: 4px;
+	cursor: pointer;
+	transition: background 0.3s;
+  }
+  
+  #contacto button:hover {
+	background: #333;
+  }
+  
+  /* Footer */
+  footer {
+	background: #1a1a1a;
+	color: #fff;
 	text-align: center;
-}
-.correo{
-	width: 35%;
+	padding: 1rem;
+	margin-top: 2rem;
+  }
+
+
+  /* Reset básico */
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+  }
+  
+  /* Tipografía y colores generales */
+  body {
+	font-family: "Segoe UI", Arial, sans-serif;
+	line-height: 1.6;
+	color: #333;
+	background-color: #f9f9f9;
+  }
+  
+  /* Encabezado */
+  header {
+	background: #1a1a1a;
+	color: #fff;
+	padding: 1rem 2rem;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	flex-wrap: wrap;
+  }
+  
+  header h1 {
+	font-size: 1.5rem;
+  }
+  
+  nav ul {
+	list-style: none;
+	display: flex;
+	gap: 1.5rem;
+	flex-wrap: wrap;
+  }
+  
+  nav ul li {
+	cursor: pointer;
+	transition: color 0.3s;
+  }
+  
+  nav ul li:hover {
+	color: #ffcc00;
+  }
+  
+  /* Secciones generales */
+  section {
+	padding: 3rem 2rem;
+	max-width: 1000px;
+	margin: auto;
+  }
+  
+  section h2 {
+	margin-bottom: 1rem;
+	color: #1a1a1a;
+	border-bottom: 2px solid #ffcc00;
+	display: inline-block;
+	padding-bottom: 0.3rem;
+  }
+  
+  /* Presentación */
+  #presentacion {
 	text-align: center;
-}
-.rs {
-	width: 35%;
+	background: #fff;
+	border-radius: 8px;
+	padding: 2rem;
+	box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  }
+  
+  #presentacion button {
+	margin-top: 1rem;
+	padding: 0.7rem 1.5rem;
+	border: none;
+	background: #ffcc00;
+	color: #1a1a1a;
+	font-weight: bold;
+	border-radius: 4px;
+	cursor: pointer;
+	transition: background 0.3s;
+  }
+  
+  #presentacion button:hover {
+	background: #e6b800;
+  }
+  
+  /* Proyectos */
+  #proyectos {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+	gap: 1.5rem;
+  }
+  
+  .proyecto {
+	background: #fff;
+	padding: 1.5rem;
+	border-radius: 8px;
+	box-shadow: 0 2px 6px rgba(0,0,0,0.1);
 	text-align: center;
-}
-
-.conacto rs a{
-width: 100px;
-}
-
-
-                          /* aqui empiexa el responsive*/
-
-
-@media screen and (max-width: 1250px){
-
-	.nave{
-		padding-left: 20px;
+  }
+  
+  /* Conocimientos */
+  #conocimientos ul {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 1rem;
+  }
+  
+  #conocimientos li {
+	background: #fff;
+	padding: 0.5rem 1rem;
+	border-radius: 20px;
+	box-shadow: 0 1px 4px rgba(0,0,0,0.1);
+  }
+  
+  /* Contacto */
+  #contacto form {
+	display: flex;
+	flex-direction: column;
+	gap: 1rem;
+  }
+  
+  #contacto input, 
+  #contacto textarea {
+	padding: 0.8rem;
+	border: 1px solid #ccc;
+	border-radius: 4px;
+  }
+  
+  #contacto button {
+	padding: 0.8rem;
+	border: none;
+	background: #1a1a1a;
+	color: #fff;
+	font-weight: bold;
+	border-radius: 4px;
+	cursor: pointer;
+	transition: background 0.3s;
+  }
+  
+  #contacto button:hover {
+	background: #333;
+  }
+  
+  /* Footer */
+  footer {
+	background: #1a1a1a;
+	color: #fff;
+	text-align: center;
+	padding: 1rem;
+	margin-top: 2rem;
+  }
+  
+  /* -------------------- RESPONSIVE -------------------- */
+  
+  /* Tablets */
+  @media (max-width: 768px) {
+	nav ul {
+	  justify-content: center;
 	}
-
-	.nave ul li a{
-		font-size: 10px;
+  
+	section {
+	  padding: 2rem 1rem;
 	}
-	.imagen{
-		background: grey;
-		width: 70%;
+  
+	#proyectos {
+	  grid-template-columns: 1fr 1fr;
 	}
-	.imagen img{
-		
+  }
+  
+  /* Celulares */
+  @media (max-width: 480px) {
+	header {
+	  flex-direction: column;
+	  text-align: center;
 	}
-	.prescir{
-		text-align: center;
-		margin-top: 100px;
-		margin-right: 10%;
+  
+	nav ul {
+	  flex-direction: column;
+	  gap: 0.8rem;
+	  margin-top: 1rem;
 	}
-	.curri{
-		height: 110px;
+  
+	#proyectos {
+	  grid-template-columns: 1fr;
 	}
-	.curri a{
-		font-size: 16px;
+  
+	#presentacion button {
+	  width: 100%;
 	}
-	.proye{
-		height: 110px;
+  
+	#contacto input, 
+	#contacto textarea {
+	  width: 100%;
 	}
-	.proye a{
-		font-size: 16px;
-	}
-	.contac{
-		height: 110px;
-	}
-	.contac a{
-		font-size: 15px;
-	}
-
-}
-
-@media screen and (max-width: 970px){
-	.padre{
-	
-	}
-	.prescir{
-		font-size: 20px;
-		margin-top: 100px;
-		margin-left: 15px;
-		text-align: right;
-	}
-	.imagen {
-		width: 100%;
-		margin-bottom: 50px;
-		float: center;
-	}
-}
-
-@media screen and (max-width: 800px){
-	.padre{
-		
-	}
-	.esquina{
-		display: none;
-	}
-
-	.yo{
-		text-align: right;
-	}
-	.nave li{
- display: none;
- transform: scale(8);
-	}
-	.nave i{
-		display: block;
-		font-size: 40px;
-	}
-	
-	.pres{
-		height: 890px;
-		width: 100%;
-	}
-
-	.imagen{
-		margin-top: 20px;
-		width: 60%;
-		margin-right: 45px;
-		position: absolute;
-		
-
-	}
-	.prescir{
-		position: absolute;
-		margin-top: 540px;
-		width: 90%;
-		height: auto;
-		text-align: center;
-
-	}
-	.curri{
-		width: 100px;
-	}
-}
+  }
