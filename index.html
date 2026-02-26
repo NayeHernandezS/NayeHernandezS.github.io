@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="utf-8">
+    <title>Mi portafolio profesional </title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="estiloindex.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+
+    <title>Presentacion</title>
+</head>
+<body>
+
+    <header>
+    <h1>Nayely Hernandez Silva</h1>
+    
+    <nav>
+        <ul>
+        <li>Presentación</li>
+        <li>Proyectos</li>
+        <li>Experiencia</li>
+        <li>Conocimientos</li>
+        <li>Educación</li>
+        <li>Contacto</li>
+        </ul>
+    </nav>
+    </header>
+    
+    <section id="presentacion">
+        <img src="perfil.jpeg" alt="Foto de perfil" class="perfil-img">
+        <br>
+    <h2>¿Qué ofrezco?</h2>
+    <p>Profesional con excelente capacidad de manejo
+        computacional para el desarrollo de software. Me destaco
+        por ser una persona responsable y brindar apoyo a mi
+        equipo de trabajo. Incluyendo la solución de posibles
+        incidencias. Poseo una solida formación académica en el
+        área de programación en java.
+        Busco oportunidades que me permitan contribuir con mi
+        habilidad y continuar desarrollándome en mi entorno
+        desafiante.</p>
+
+    <button>Contáctame</button>
+    </section>
+    
+    <section id="proyectos">
+    <h2>Proyectos</h2>
+    <div class="proyecto">Proyecto 1</div>
+    <div class="proyecto">Proyecto 2</div>
+    </section>
+    
+    <section id="experiencia">
+    <h2>Experiencia Laboral</h2>
+    <p>Empresa - Cargo - Periodo</p>
+    </section>
+    
+    <section id="conocimientos">
+    <h2>Conocimientos</h2>
+    <ul>
+        <li>Java </li>
+        <li>Jakarta EE</li>
+        <li>Spring Boot</li>
+        <li>Hibernate</li>
+        <li>MySQL </li>
+        <li>HTML5 </li>
+        <li>CSS3 </li>
+    </ul>
+    </section>
+    
+    <section id="educacion">
+    <h2>Educación</h2>
+    <p>Universidad Autonoma del estado de Morelos - Informatica - 2015-2019</p>
+    </section>
+    
+    <section id="contacto">
+    <h2>Contacto</h2>
+    <form>
+        <input type="text" placeholder="Nombre">
+        <input type="email" placeholder="Email">
+        <textarea placeholder="Mensaje"></textarea>
+        <button type="submit">Enviar</button>
+    </form>
+    </section>
+    
+    <footter>
+    <p>© 2026 Nayely Hernandez Silva - Todos los derechos reservados</p>
+    </footter>
+    
+
+   <!-- <script>
+        // Scroll suave al hacer clic en el menú
+        document.querySelectorAll("nav ul li").forEach(item => {
+          item.addEventListener("click", () => {
+            const sectionId = item.textContent.toLowerCase();
+            const section = document.getElementById(sectionId);
+            if(section){
+              section.scrollIntoView({ behavior: "smooth" });
+            }
+          });
+        });
+        
+        // Botón "Contáctame" que lleva al formulario
+        document.querySelector("#presentacion button").addEventListener("click", () => {
+          document.getElementById("contacto").scrollIntoView({ behavior: "smooth" });
+        });
+        
+        // Animación de aparición al hacer scroll
+        const elementos = document.querySelectorAll("section, .perfil-img");
+        
+        const mostrarElemento = () => {
+          elementos.forEach(el => {
+            const rect = el.getBoundingClientRect();
+            if(rect.top < window.innerHeight - 100){
+              el.classList.add("visible");
+            }
+          });
+        };
+        
+        window.addEventListener("scroll", mostrarElemento);
+        window.addEventListener("load", mostrarElemento);
+        </script>
+        
+</body>
+ </html>

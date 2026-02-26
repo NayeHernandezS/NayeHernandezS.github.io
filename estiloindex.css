@@ -1,0 +1,381 @@
+/* Reset básico */
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+  }
+  
+  /* Tipografía y colores generales */
+  body {
+	font-family: "Segoe UI", Arial, sans-serif;
+	line-height: 1.6;
+	color: #333;
+	background-color: #f9f9f9;
+  }
+  
+  /* Encabezado */
+  header {
+	background: #1a1a1a;
+	color: #fff;
+	padding: 1rem 2rem;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+  }
+  
+  header h1 {
+	font-size: 1.5rem;
+  }
+  
+  nav ul {
+	list-style: none;
+	display: flex;
+	gap: 1.5rem;
+  }
+  
+  nav ul li {
+	cursor: pointer;
+	transition: color 0.3s;
+  }
+  
+  nav ul li:hover {
+	color: #ffcc00;
+  }
+  
+  /* Secciones generales */
+  section {
+	padding: 3rem 2rem;
+	max-width: 1000px;
+	margin: auto;
+  }
+  /* Imagen de perfil en presentación */
+#presentacion .perfil-img {
+	width: 150px;
+	height: 150px;
+	border-radius: 50%; /* círculo */
+	object-fit: cover;
+	margin-bottom: 1rem;
+	border: 3px solid #ffcc00; /* borde dorado elegante */
+	box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+  }
+
+  section, .perfil-img {
+	opacity: 0;
+	transform: translateY(30px);
+	transition: all 0.6s ease-out;
+  }
+  
+  section.visible, .perfil-img.visible {
+	opacity: 1;
+	transform: translateY(0);
+  }
+  
+  
+  
+  section h2 {
+	margin-bottom: 1rem;
+	color: #1a1a1a;
+	border-bottom: 2px solid #ffcc00;
+	display: inline-block;
+	padding-bottom: 0.3rem;
+  }
+  
+  /* Presentación */
+  #presentacion {
+	text-align: center;
+	background: #fff;
+	border-radius: 8px;
+	padding: 2rem;
+	box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  }
+  
+  #presentacion button {
+	margin-top: 1rem;
+	padding: 0.7rem 1.5rem;
+	border: none;
+	background: #ffcc00;
+	color: #1a1a1a;
+	font-weight: bold;
+	border-radius: 4px;
+	cursor: pointer;
+	transition: background 0.3s;
+  }
+  
+  #presentacion button:hover {
+	background: #e6b800;
+  }
+  
+  /* Proyectos */
+  #proyectos {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+	gap: 1.5rem;
+  }
+  
+  .proyecto {
+	background: #fff;
+	padding: 1.5rem;
+	border-radius: 8px;
+	box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+	text-align: center;
+  }
+  
+  /* Experiencia laboral */
+  #experiencia p {
+	margin-bottom: 1rem;
+  }
+  
+  /* Conocimientos */
+  #conocimientos ul {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 1rem;
+  }
+  
+  #conocimientos li {
+	background: #fff;
+	padding: 0.5rem 1rem;
+	border-radius: 20px;
+	box-shadow: 0 1px 4px rgba(0,0,0,0.1);
+  }
+  
+  /* Educación */
+  #educacion p {
+	margin-bottom: 1rem;
+  }
+  
+  /* Contacto */
+  #contacto form {
+	display: flex;
+	flex-direction: column;
+	gap: 1rem;
+  }
+  
+  #contacto input, 
+  #contacto textarea {
+	padding: 0.8rem;
+	border: 1px solid #ccc;
+	border-radius: 4px;
+  }
+  
+  #contacto button {
+	padding: 0.8rem;
+	border: none;
+	background: #1a1a1a;
+	color: #fff;
+	font-weight: bold;
+	border-radius: 4px;
+	cursor: pointer;
+	transition: background 0.3s;
+  }
+  
+  #contacto button:hover {
+	background: #333;
+  }
+  
+  /* Footer */
+  footer {
+	background: #1a1a1a;
+	color: #fff;
+	text-align: center;
+	padding: 1rem;
+	margin-top: 2rem;
+  }
+
+
+  /* Reset básico */
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+  }
+  
+  /* Tipografía y colores generales */
+  body {
+	font-family: "Segoe UI", Arial, sans-serif;
+	line-height: 1.6;
+	color: #333;
+	background-color: #f9f9f9;
+  }
+  
+  /* Encabezado */
+  header {
+	background: #1a1a1a;
+	color: #fff;
+	padding: 1rem 2rem;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	flex-wrap: wrap;
+  }
+  
+  header h1 {
+	font-size: 1.5rem;
+  }
+  
+  nav ul {
+	list-style: none;
+	display: flex;
+	gap: 1.5rem;
+	flex-wrap: wrap;
+  }
+  
+  nav ul li {
+	cursor: pointer;
+	transition: color 0.3s;
+  }
+  
+  nav ul li:hover {
+	color: #ffcc00;
+  }
+  
+  /* Secciones generales */
+  section {
+	padding: 3rem 2rem;
+	max-width: 1000px;
+	margin: auto;
+  }
+  
+  section h2 {
+	margin-bottom: 1rem;
+	color: #1a1a1a;
+	border-bottom: 2px solid #ffcc00;
+	display: inline-block;
+	padding-bottom: 0.3rem;
+  }
+  
+  /* Presentación */
+  #presentacion {
+	text-align: center;
+	background: #fff;
+	border-radius: 8px;
+	padding: 2rem;
+	box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  }
+  
+  #presentacion button {
+	margin-top: 1rem;
+	padding: 0.7rem 1.5rem;
+	border: none;
+	background: #ffcc00;
+	color: #1a1a1a;
+	font-weight: bold;
+	border-radius: 4px;
+	cursor: pointer;
+	transition: background 0.3s;
+  }
+  
+  #presentacion button:hover {
+	background: #e6b800;
+  }
+  
+  /* Proyectos */
+  #proyectos {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+	gap: 1.5rem;
+  }
+  
+  .proyecto {
+	background: #fff;
+	padding: 1.5rem;
+	border-radius: 8px;
+	box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+	text-align: center;
+  }
+  
+  /* Conocimientos */
+  #conocimientos ul {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 1rem;
+  }
+  
+  #conocimientos li {
+	background: #fff;
+	padding: 0.5rem 1rem;
+	border-radius: 20px;
+	box-shadow: 0 1px 4px rgba(0,0,0,0.1);
+  }
+  
+  /* Contacto */
+  #contacto form {
+	display: flex;
+	flex-direction: column;
+	gap: 1rem;
+  }
+  
+  #contacto input, 
+  #contacto textarea {
+	padding: 0.8rem;
+	border: 1px solid #ccc;
+	border-radius: 4px;
+  }
+  
+  #contacto button {
+	padding: 0.8rem;
+	border: none;
+	background: #1a1a1a;
+	color: #fff;
+	font-weight: bold;
+	border-radius: 4px;
+	cursor: pointer;
+	transition: background 0.3s;
+  }
+  
+  #contacto button:hover {
+	background: #333;
+  }
+  
+  /* Footer */
+  footer {
+	background: #1a1a1a;
+	color: #fff;
+	text-align: center;
+	padding: 1rem;
+	margin-top: 2rem;
+  }
+  
+  /* -------------------- RESPONSIVE -------------------- */
+  
+  /* Tablets */
+  @media (max-width: 768px) {
+	nav ul {
+	  justify-content: center;
+	}
+  
+	section {
+	  padding: 2rem 1rem;
+	}
+  
+	#proyectos {
+	  grid-template-columns: 1fr 1fr;
+	}
+  }
+  
+  /* Celulares */
+  @media (max-width: 480px) {
+	header {
+	  flex-direction: column;
+	  text-align: center;
+	}
+  
+	nav ul {
+	  flex-direction: column;
+	  gap: 0.8rem;
+	  margin-top: 1rem;
+	}
+  
+	#proyectos {
+	  grid-template-columns: 1fr;
+	}
+  
+	#presentacion button {
+	  width: 100%;
+	}
+  
+	#contacto input, 
+	#contacto textarea {
+	  width: 100%;
+	}
+  }
