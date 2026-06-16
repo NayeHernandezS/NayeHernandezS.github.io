@@ -1,6 +1,6 @@
 (function () {
   // Obtén tu access_key gratis en https://web3forms.com (usa soporte@fusiondigital.com)
-  const FORM_ACCESS_KEY = "REEMPLAZA_CON_TU_ACCESS_KEY";
+  const FORM_ACCESS_KEY = "70ae931a-9775-4917-8527-145b7de03d9f";
 
   const nav = document.querySelector(".nav");
   const toggle = document.querySelector(".nav__toggle");
