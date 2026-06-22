@@ -1,5 +1,5 @@
 (function () {
-  // Obtén tu access_key gratis en https://web3forms.com (usa soporte@fusiondigital.com)
+  // Web3Forms: los mensajes llegan a misredes.cash@gmail.com
   const FORM_ACCESS_KEY = "70ae931a-9775-4917-8527-145b7de03d9f";
 
   const nav = document.querySelector(".nav");
